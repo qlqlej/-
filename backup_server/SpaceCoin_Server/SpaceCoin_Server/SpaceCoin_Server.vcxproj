@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{29b67a13-710b-47ef-bdae-a1b485e6e1ce}</ProjectGuid>
+    <RootNamespace>SpaceCoinServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExternalIncludePath>C:\Users\admin\AppData\Local\Programs\Python\Python39\include;include\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\admin\AppData\Local\Programs\Python\Python39\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExternalIncludePath>C:\Users\admin\AppData\Local\Programs\Python\Python39\include;include\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\admin\AppData\Local\Programs\Python\Python39\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExternalIncludePath>C:\Users\admin\AppData\Local\Programs\Python\Python39\include;include\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\admin\AppData\Local\Programs\Python\Python39\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExternalIncludePath>C:\Users\admin\AppData\Local\Programs\Python\Python39\include;include\;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\admin\AppData\Local\Programs\Python\Python39\Lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>python3.lib;python39.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>python3.lib;python39.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>python3.lib;python39.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>python3.lib;python39.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DB.cpp" />
+    <ClCompile Include="extended_overlapped.cpp" />
+    <ClCompile Include="includePython.cpp" />
+    <ClCompile Include="Iocp.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="monster.cpp" />
+    <ClCompile Include="session.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DB.h" />
+    <ClInclude Include="extended_overlapped.h" />
+    <ClInclude Include="includePython.h" />
+    <ClInclude Include="include\abstract.h" />
+    <ClInclude Include="include\asdl.h" />
+    <ClInclude Include="include\ast.h" />
+    <ClInclude Include="include\bitset.h" />
+    <ClInclude Include="include\bltinmodule.h" />
+    <ClInclude Include="include\boolobject.h" />
+    <ClInclude Include="include\bytearrayobject.h" />
+    <ClInclude Include="include\bytesobject.h" />
+    <ClInclude Include="include\cellobject.h" />
+    <ClInclude Include="include\ceval.h" />
+    <ClInclude Include="include\classobject.h" />
+    <ClInclude Include="include\code.h" />
+    <ClInclude Include="include\codecs.h" />
+    <ClInclude Include="include\compile.h" />
+    <ClInclude Include="include\complexobject.h" />
+    <ClInclude Include="include\context.h" />
+    <ClInclude Include="include\datetime.h" />
+    <ClInclude Include="include\descrobject.h" />
+    <ClInclude Include="include\dictobject.h" />
+    <ClInclude Include="include\dynamic_annotations.h" />
+    <ClInclude Include="include\enumobject.h" />
+    <ClInclude Include="include\errcode.h" />
+    <ClInclude Include="include\eval.h" />
+    <ClInclude Include="include\exports.h" />
+    <ClInclude Include="include\fileobject.h" />
+    <ClInclude Include="include\fileutils.h" />
+    <ClInclude Include="include\floatobject.h" />
+    <ClInclude Include="include\frameobject.h" />
+    <ClInclude Include="include\funcobject.h" />
+    <ClInclude Include="include\genericaliasobject.h" />
+    <ClInclude Include="include\genobject.h" />
+    <ClInclude Include="include\graminit.h" />
+    <ClInclude Include="include\grammar.h" />
+    <ClInclude Include="include\import.h" />
+    <ClInclude Include="include\interpreteridobject.h" />
+    <ClInclude Include="include\intrcheck.h" />
+    <ClInclude Include="include\iterobject.h" />
+    <ClInclude Include="include\lauxlib.h" />
+    <ClInclude Include="include\listobject.h" />
+    <ClInclude Include="include\longintrepr.h" />
+    <ClInclude Include="include\longobject.h" />
+    <ClInclude Include="include\lua.h" />
+    <ClInclude Include="include\lua.hpp" />
+    <ClInclude Include="include\luaconf.h" />
+    <ClInclude Include="include\lualib.h" />
+    <ClInclude Include="include\marshal.h" />
+    <ClInclude Include="include\memoryobject.h" />
+    <ClInclude Include="include\methodobject.h" />
+    <ClInclude Include="include\modsupport.h" />
+    <ClInclude Include="include\moduleobject.h" />
+    <ClInclude Include="include\namespaceobject.h" />
+    <ClInclude Include="include\node.h" />
+    <ClInclude Include="include\object.h" />
+    <ClInclude Include="include\objimpl.h" />
+    <ClInclude Include="include\odictobject.h" />
+    <ClInclude Include="include\opcode.h" />
+    <ClInclude Include="include\osdefs.h" />
+    <ClInclude Include="include\osmodule.h" />
+    <ClInclude Include="include\parsetok.h" />
+    <ClInclude Include="include\patchlevel.h" />
+    <ClInclude Include="include\picklebufobject.h" />
+    <ClInclude Include="include\pyarena.h" />
+    <ClInclude Include="include\pycapsule.h" />
+    <ClInclude Include="include\pyconfig.h" />
+    <ClInclude Include="include\pyctype.h" />
+    <ClInclude Include="include\pydebug.h" />
+    <ClInclude Include="include\pydtrace.h" />
+    <ClInclude Include="include\pyerrors.h" />
+    <ClInclude Include="include\pyexpat.h" />
+    <ClInclude Include="include\pyfpe.h" />
+    <ClInclude Include="include\pyframe.h" />
+    <ClInclude Include="include\pyhash.h" />
+    <ClInclude Include="include\pylifecycle.h" />
+    <ClInclude Include="include\pymacconfig.h" />
+    <ClInclude Include="include\pymacro.h" />
+    <ClInclude Include="include\pymath.h" />
+    <ClInclude Include="include\pymem.h" />
+    <ClInclude Include="include\pyport.h" />
+    <ClInclude Include="include\pystate.h" />
+    <ClInclude Include="include\pystrcmp.h" />
+    <ClInclude Include="include\pystrhex.h" />
+    <ClInclude Include="include\pystrtod.h" />
+    <ClInclude Include="include\Python-ast.h" />
+    <ClInclude Include="include\Python.h" />
+    <ClInclude Include="include\pythonrun.h" />
+    <ClInclude Include="include\pythread.h" />
+    <ClInclude Include="include\pytime.h" />
+    <ClInclude Include="include\py_curses.h" />
+    <ClInclude Include="include\rangeobject.h" />
+    <ClInclude Include="include\setobject.h" />
+    <ClInclude Include="include\sliceobject.h" />
+    <ClInclude Include="include\structmember.h" />
+    <ClInclude Include="include\structseq.h" />
+    <ClInclude Include="include\symtable.h" />
+    <ClInclude Include="include\sysmodule.h" />
+    <ClInclude Include="include\token.h" />
+    <ClInclude Include="include\traceback.h" />
+    <ClInclude Include="include\tracemalloc.h" />
+    <ClInclude Include="include\tupleobject.h" />
+    <ClInclude Include="include\typeslots.h" />
+    <ClInclude Include="include\ucnhash.h" />
+    <ClInclude Include="include\unicodeobject.h" />
+    <ClInclude Include="include\warnings.h" />
+    <ClInclude Include="include\weakrefobject.h" />
+    <ClInclude Include="Iocp.h" />
+    <ClInclude Include="monster.h" />
+    <ClInclude Include="protocol.h" />
+    <ClInclude Include="session.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lua54.lib" />
+    <Library Include="python3.lib" />
+    <Library Include="python39.lib" />
+    <Library Include="_tkinter.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="monsterAI.lua" />
+    <None Include="python3.dll" />
+    <None Include="python39.dll" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
