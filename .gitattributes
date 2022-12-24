@@ -1,0 +1,4 @@
+*.umap filter=lfs diff=lfs merge=lfs -text
+Space_coin/Content/Luminous_Monster/Textures/T_Luminous_Monster_n_DirectX.uasset filter=lfs diff=lfs merge=lfs -text
+Space_coin/Content/Tentacle_Monster/Textures/T_Tentacle_Monster_n_DirectX.uasset filter=lfs diff=lfs merge=lfs -text
+*.uasset filter=lfs diff=lfs merge=lfs -text
